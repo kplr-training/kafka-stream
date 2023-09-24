@@ -1,10 +1,15 @@
 # Setup Kafka-Gitpod-Docker
-- Se connecter sur votre compte Gitpod et lancer un espace de travail
+- Se connecter sur votre compte Gitpod et lancer un espace de travail 
 
 ![image](https://github.com/kplr-training/kafka-stream/assets/123749462/4b984153-5981-485a-90a9-9fe5bc8f9749)
 
-- Vous ajouter le fichier docker-compose.yml
+
 ## **Se connecter au shell Kafka** :
+- Lancer les conteneurs de Zookeeper et Kafka :
+
+```
+docker-compose up -d
+```
 - Une fois que les conteneurs Zookeeper et Kafka sont en cours d'exécution, vous pouvez exécuter la commande Terminal suivante pour démarrer un shell Kafka :
 ```
 docker exec -it kafka /bin/sh
